@@ -1,0 +1,390 @@
+:root {
+    font-size: 16px;
+    --background: #251F24;
+    --white30:white;
+    --white20:#A5A3A5;
+    --white10:#616161;
+    --white15:#3A3539;
+    
+
+}
+
+
+/*------SECTIONS------*/
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: 'nunito', sans-serif;
+    background-color: var(--background);
+    color:var(--grey30);
+    margin:0
+    /* writing-mode: vertical-lr;
+    margin: 10px 10px 10px 10px
+    margin-inline: 100px;
+    margin-block:100px;
+    margin-block-start:50px;
+    margin-block-end:50px;
+    margin: 0 100px;
+    margin-block: ;
+    */
+}
+
+a {
+    color:var(--grey30);
+}
+
+header {
+    margin-block-start: 20px;
+    margin-block-end: 50px;
+    font-size: 14px;
+    /*width: 188px;*/
+    height: 400px;
+    color:var(--blackbtn);
+    /*top:64px;*/
+    /*bottom*/
+    /*inset-block-end: ;
+    /*left*/
+    /*inset-inline-start: ;
+    /*right*/
+    /*inset-inline-end: ;*/
+    inset-inline-start:-188px;
+    line-height: 24px;
+}
+
+header a {
+    color: var(--white20);
+    text-decoration: none;
+}
+
+header a:hover {
+    color:var(--grey20);
+}
+
+nav details summary {
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--white30);
+}
+
+header li {
+    margin-block-end: 16px;
+    color: var(--white20);
+}
+
+h1 {
+    /*
+    valores logicos:
+    text-align: end;
+    text-align: start;*/
+    font-size: 40px;
+    /*font-size: 3.75em;*/
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+    color: var(--white30);
+}
+
+
+hr {
+    margin-block: 40px;
+    border: 1px solid rgba(97, 97, 97, 0.2);
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-block:40px;
+    color: var(--white30);
+}
+
+h3 {
+    /*font-size: 24px;*/
+    font-size: 2em;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: var(--white30);
+}
+
+p{
+    color:var(--white20);
+}
+
+pre {
+    background-color:var(--white15);
+    padding: 40px;
+    font-family: 'Nunito';
+    line-height: 24px;
+    overflow: auto;
+    border-radius: 8px;
+    /*border-inline-start: 5px solid white;*/
+    border: 10px solid #5551ff;
+    box-shadow: -10px 10px 0 0 #ABAAf6 ;
+    margin-block-end: 40px;
+    /*border-start-start-radius: 20%;*/
+    /*recordar
+    border-block: 20px modifica arriba y abajo
+    border-inline-start; modifica left
+    border-inline-end; modifica right
+    */
+}
+
+pre code {
+    color: #ffff;
+}
+
+
+blockquote {
+    background-color:var(--white15);
+    font-size: 24px;
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    padding-inline-start: 24px;
+    padding-inline-end: 17px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+    border-radius: 8px;
+}
+
+blockquote p {
+    color: white ;
+}
+
+blockquote span {
+    color:var(--grey10);
+    
+}
+blockquote span::before {
+    content: '-'
+}
+
+/*.debug {
+    /*box-shadow: inset 0 0 0 50px red; inset va x dentro;
+    outline: 50px solid red;
+    background: red
+    border: 1px solid red !important;
+    box-sizing: 5px sold blue; 
+    
+    todos estos recursos sirven para poder ubicar nuestro selector
+    en un proyecto mas grande sin cambiar su diseño;
+    
+}
+*/
+/*.title {
+    /* height: 200px;
+        width: 200px;
+        margin: 100px;
+        border: 5px solid blue; 
+}
+*/
+
+/*------ CLASES------*/
+
+.hero {
+    background-image:linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);;
+    block-size: 50px;
+    width: 100%;
+}
+
+.section-content ol li {
+    line-height: 24px;
+    color: white;
+}
+
+.section-content ul li {
+    margin-bottom: 16px;
+    color: white;
+}
+
+.section-content hr {
+    display: none;
+}
+
+.img-dom {
+    max-inline-size: 100%;
+    margin-top: 40px;
+    display: block;
+}
+
+.img-css {
+    max-inline-size: 100%;
+    margin-top: 40px;
+    display: block;
+}
+
+.img-prog {
+    max-inline-size: 100%;
+    margin-top: 40px;
+    display: block;
+}
+.section-content h3 {
+    padding-bottom: 8px;
+    position: relative;
+}
+
+/*.section-content h3::before {
+    /*content:counter(tittleList, decimal) '. ';
+}*/
+
+
+/*.section-content h3::after {
+    content: '';
+    background-color:var(--grey20);
+    display: inline-block;
+    position: absolute;
+    height: 4px;
+    width: 171px;
+    left: 0; 
+    bottom: 0;
+}*/
+
+.header {
+    /*
+    position:fixed;
+    inset:50px;
+    inset-inline:50px;
+    block-size: 500px; 
+    estas de abajo ponen el header a la izq:
+    inset-block: 50px;   
+    inline-size: 500px; 
+    */
+}
+
+.header-content{
+    padding-inline: 20px;
+}
+
+.main {
+    block-size: 902px;
+}
+
+.wrapper {
+    inline-size: 902px;
+    margin: auto;
+    padding: 5px;
+    max-inline-size: 902px;
+    /*block-size: 100px;*/
+    /*overflow: scroll;    */
+}
+
+.main-content {
+    padding: 16px;
+}
+
+
+/*------ SLIDER------*/
+.slider {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.slider-container {
+    height: 350px;
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+}
+.slider-container a {
+    text-decoration: none ;
+}
+
+.video {
+    display: inline-block;
+    margin: 0px;
+    scroll-behavior: smooth;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+    text-align: center;
+    margin-block-start: 20px;
+}
+
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+.form input {
+    inline-size: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: var(--background);
+    padding-inline: 12px;
+    padding-block: 12px;
+    color: var(--white30);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input[type='submit']{
+    background: #157EFB;
+    border: none;
+}
+
+.form input ::placeholder {
+    color:var(--white20);
+}
+
+@media screen and (min-width:1366px) {
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
+
+    
+    .hero {
+        block-size: 350px;
+        width: 100%;
+    }
+
+    .header {
+        position: sticky;
+        inset-block-start: 0;
+    }
+    
+    .header-content{
+        position: relative;
+        padding-inline: 0px;
+    }
+
+    header {
+        inline-size: 188px;
+        color:var(--blackbtn);
+        inset-block-start: 100px;
+        inset-inline-start:-188px;;
+        position: absolute;
+    }
+}
+
+
+
+/*
+
+Siempre trabajar por secciones y la ley del wrapper
+
+::selection {
+    background:lightblue ;
+}*/
+
+/* Margin collapsing son margenes que se superponen, es decir no se suman entre si.
+funciona solo en contexto de bloque(display: block) y funciona solo de arriba a abajo.
+
+Una etiqueta span sirve para representar un contenido 
+no semantico dentro de un contenido semantico
+
+usar outline en vez de border para señalizar un selector si estamos en un proyecto grande
+outline es mejor porque no suma px al diseño y no lo altera, y lo señaliza igual.
+
+si un elemento bloque, por ejemplo main, tiene un ancho DEFINIDO (ej:900px)
+podemos usar margin:auto; para centrarlo en la pantalla
+
+*/
